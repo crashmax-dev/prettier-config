@@ -1,5 +1,5 @@
 {
-  "name": "prettier-config",
+  "name": "@crashmax/prettier-config",
   "version": "1.0.0",
   "description": "prettier-config",
   "prettier": "./index.json",
