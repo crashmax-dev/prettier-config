@@ -1,0 +1,33 @@
+{
+  "name": "prettier-config",
+  "version": "1.0.0",
+  "description": "prettier-config",
+  "prettier": "./index.json",
+  "scripts": {
+    "prettier": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
+    "prettier:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crashmax-dev/prettier-config.git"
+  },
+  "author": {
+    "name": "Vitalij Ryndin",
+    "email": "sys@crashmax.ru",
+    "url": "https://crashmax.ru"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crashmax-dev/prettier-config/issues"
+  },
+  "homepage": "https://github.com/crashmax-dev/prettier-config#readme",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "prettier": "^2.7.1"
+  },
+  "packageManager": "pnpm@7.3.0"
+}
