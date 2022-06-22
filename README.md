@@ -7,7 +7,7 @@
 **Install**:
 
 ```bash
-$ pnpm add --dev @crashmax/prettier-config
+$ pnpm add @crashmax/prettier-config -D
 ```
 
 **Edit `package.json`**:
@@ -16,8 +16,8 @@ $ pnpm add --dev @crashmax/prettier-config
 {
   "prettier": "@crashmax/prettier-config",
   "scripts": {
-    "prettier": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
-    "prettier:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx}'"
+    "format": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
+    "format:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx}'"
   }
 }
 ```
