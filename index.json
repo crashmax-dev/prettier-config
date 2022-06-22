@@ -21,7 +21,8 @@
     }
   ],
   "plugins": [
-    "@trivago/prettier-plugin-sort-imports"
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-multiline-arrays"
   ],
   "importOrder": [
     "^react",

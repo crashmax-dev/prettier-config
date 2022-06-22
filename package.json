@@ -23,11 +23,13 @@
   "homepage": "https://github.com/crashmax-dev/prettier-config#readme",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "prettier-plugin-multiline-arrays": "^1.0.0"
   },
   "peerDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "prettier-plugin-multiline-arrays": "^1.0.0"
   },
   "packageManager": "pnpm@7.3.0"
 }

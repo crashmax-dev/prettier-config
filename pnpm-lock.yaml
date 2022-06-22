@@ -3,10 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@trivago/prettier-plugin-sort-imports': ^3.2.0
   prettier: ^2.7.1
+  prettier-plugin-multiline-arrays: ^1.0.0
 
 devDependencies:
   '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.7.1
   prettier: 2.7.1
+  prettier-plugin-multiline-arrays: 1.0.0
 
 packages:
 
@@ -72,7 +74,7 @@ packages:
       '@babel/compat-data': 7.18.5
       '@babel/core': 7.13.10
       '@babel/helper-validator-option': 7.16.7
-      browserslist: 4.20.4
+      browserslist: 4.21.0
       semver: 6.3.0
     dev: true
 
@@ -292,16 +294,21 @@ packages:
       color-convert: 1.9.3
     dev: true
 
-  /browserslist/4.20.4:
-    resolution: {integrity: sha512-ok1d+1WpnU24XYN7oC3QWgTyMhY/avPJ/r9T00xxvUOIparA/gc+UPUMaod3i+G6s+nI2nUb9xZ5k794uIwShw==}
+  /augment-vir/1.9.1:
+    resolution: {integrity: sha512-GgXArqs9uvHmDQFbaAYh0QhsxVGPhR+CEVln/3R2hBq5Sq89qXuMyRA4HtPHTfWGzI/TeH5DmupGi702mxP6QQ==}
+    dependencies:
+      fs-extra: 10.0.1
+    dev: true
+
+  /browserslist/4.21.0:
+    resolution: {integrity: sha512-UQxE0DIhRB5z/zDz9iA03BOfxaN2+GQdBYH/2WrSIWEUrnpzTPJbhqt+umq6r3acaPRTW1FNTkrcp0PXgtFkvA==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001358
-      electron-to-chromium: 1.4.163
-      escalade: 3.1.1
+      electron-to-chromium: 1.4.165
       node-releases: 2.0.5
-      picocolors: 1.0.0
+      update-browserslist-db: 1.0.3_browserslist@4.21.0
     dev: true
 
   /caniuse-lite/1.0.30001358:
@@ -345,8 +352,8 @@ packages:
       ms: 2.1.2
     dev: true
 
-  /electron-to-chromium/1.4.163:
-    resolution: {integrity: sha512-c9q94pUVqIdc8hyr7jZDB4bNEoNF3QJ7y35lnddMD+mXtiv5GsL1bT/RmfW/KEOmvlNg5Oy1qioiy4tA7e864Q==}
+  /electron-to-chromium/1.4.165:
+    resolution: {integrity: sha512-DKQW1lqUSAYQvn9dnpK7mWaDpWbNOXQLXhfCi7Iwx0BKxdZOxkKcCyKw1l3ihWWW5iWSxKKbhEUoNRoHvl/hbA==}
     dev: true
 
   /escalade/3.1.1:
@@ -359,6 +366,15 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: true
 
+  /fs-extra/10.0.1:
+    resolution: {integrity: sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /gensync/1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
@@ -367,6 +383,10 @@ packages:
   /globals/11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
+    dev: true
+
+  /graceful-fs/4.2.10:
+    resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
 
   /has-flag/3.0.0:
@@ -394,6 +414,14 @@ packages:
     hasBin: true
     dev: true
 
+  /jsonfile/6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+    dependencies:
+      universalify: 2.0.0
+    optionalDependencies:
+      graceful-fs: 4.2.10
+    dev: true
+
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
@@ -408,6 +436,12 @@ packages:
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: true
+
+  /prettier-plugin-multiline-arrays/1.0.0:
+    resolution: {integrity: sha512-BXsUjSjS7L/1wZRf3+xWsT8uGq9MpoWg6NA85fymBo/QNcxWpZXoF4bqIUDjwa/U/NaWnXdxMyb3Oh1vSKBz0w==}
+    dependencies:
+      augment-vir: 1.9.1
     dev: true
 
   /prettier/2.7.1:
@@ -440,4 +474,20 @@ packages:
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
+    dev: true
+
+  /universalify/2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
+    engines: {node: '>= 10.0.0'}
+    dev: true
+
+  /update-browserslist-db/1.0.3_browserslist@4.21.0:
+    resolution: {integrity: sha512-ufSazemeh9Gty0qiWtoRpJ9F5Q5W3xdIPm1UZQqYQv/q0Nyb9EMHUB2lu+O9x1re9WsorpMAUu4Y6Lxcs5n+XQ==}
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
+    dependencies:
+      browserslist: 4.21.0
+      escalade: 3.1.1
+      picocolors: 1.0.0
     dev: true
