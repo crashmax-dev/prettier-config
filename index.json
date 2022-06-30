@@ -28,8 +28,12 @@
     "^react",
     "^(next/(.*)$)|^(next$)",
     "<THIRD_PARTY_TYPES>",
+    "^[~]",
+    "^[~/]",
+    "^[@/]",
     "^[./]"
   ],
   "importOrderSeparation": false,
-  "importOrderSortSpecifiers": true
+  "importOrderSortSpecifiers": true,
+  "multilineArraysWrapThreshold": 2
 }
