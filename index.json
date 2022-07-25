@@ -35,5 +35,11 @@
   ],
   "importOrderSeparation": false,
   "importOrderSortSpecifiers": true,
-  "multilineArraysWrapThreshold": 2
+  "multilineArraysWrapThreshold": 2,
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "classProperties",
+    "decorators-legacy"
+  ]
 }
