@@ -1,7 +1,6 @@
 node_modules
 dist
 build
-public
 logs
 .next
 .turbo
@@ -15,3 +14,7 @@ logs
 *.sh
 *.svg
 *rc.*
+*.htm
+*.html
+*.json
+*.md

@@ -49,7 +49,7 @@ Some commonly used scripts in `package.json`.
 ```json
 {
   "scripts": {
-    "format": "prettier --write --ignore-unknown **/*.{ts,tsx,js,jsx,css}",
+    "format": "prettier --write --ignore-unknown **",
   }
 }
 ```

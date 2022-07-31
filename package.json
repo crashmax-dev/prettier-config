@@ -9,8 +9,8 @@
     ".prettierrc.json"
   ],
   "scripts": {
-    "format:check": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx,css}'",
-    "format:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx,css}'"
+    "format:check": "prettier --check --ignore-unknown **",
+    "format:fix": "prettier --write --ignore-unknown **"
   },
   "repository": {
     "type": "git",
