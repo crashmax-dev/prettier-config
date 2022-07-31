@@ -1,0 +1,16 @@
+node_modules
+dist
+build
+public
+logs
+.next
+.turbo
+.github
+.angular
+.svelte-kit
+*.log
+*.lock
+*.yaml
+*.yml
+*.sh
+*.svg

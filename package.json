@@ -2,10 +2,14 @@
   "name": "@crashmax/prettier-config",
   "version": "1.1.2",
   "description": "prettier-config",
-  "prettier": "./index.json",
+  "prettier": "./.prettierrc.json",
+  "files": [
+    ".prettierignore",
+    ".prettierrc.json"
+  ],
   "scripts": {
-    "prettier": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
-    "prettier:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx}'"
+    "format:check": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx,css}'",
+    "format:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx,css}'"
   },
   "repository": {
     "type": "git",
@@ -22,14 +26,14 @@
   },
   "homepage": "https://github.com/crashmax-dev/prettier-config#readme",
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "prettier": "^2.7.1",
-    "prettier-plugin-multiline-arrays": "^1.0.0"
+    "prettier-plugin-multiline-arrays": "^1.1.0"
   },
   "peerDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "prettier": "^2.7.1",
-    "prettier-plugin-multiline-arrays": "^1.0.0"
+    "prettier-plugin-multiline-arrays": "^1.1.0"
   },
-  "packageManager": "pnpm@7.3.0"
+  "packageManager": "pnpm@7.7.0"
 }
