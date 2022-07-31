@@ -34,10 +34,10 @@ If you want to extend the ignore file, run the following command in the root of 
 
 ```bash
 # unix
-cp "node_modules\@crashmax\prettier-config\.prettierignore" ".prettierignore"
+cp node_modules/@crashmax/prettier-config/.prettierignore .prettierignore
 
 # windows
-copy "node_modules\@crashmax\prettier-config\.prettierignore" ".prettierignore"
+copy node_modules/@crashmax/prettier-config/.prettierignore .prettierignore
 ```
 
 It will copy the `.prettierignore` from `@crashmax/prettier-config` to your project root folder.
