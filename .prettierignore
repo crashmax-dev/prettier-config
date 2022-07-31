@@ -7,6 +7,8 @@ logs
 .github
 .angular
 .svelte-kit
+.vscode
+*.log*
 *.log
 *.lock
 *.yaml
@@ -18,3 +20,4 @@ logs
 *.html
 *.json
 *.md
+.*ignore
