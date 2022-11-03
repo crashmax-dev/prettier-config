@@ -24,22 +24,21 @@
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-multiline-arrays"
   ],
-  "importOrder": [
-    "^react",
-    "^(next/(.*)$)|^(next$)",
-    "<THIRD_PARTY_TYPES>",
-    "^[~]",
-    "^[~/]",
-    "^[@/]",
-    "^[./]"
-  ],
-  "importOrderSeparation": false,
-  "importOrderSortSpecifiers": true,
   "multilineArraysWrapThreshold": 2,
+  "importOrder": [
+    "^node:(.*)$",
+    "^(react|next(.*))$",
+    "<THIRD_PARTY_MODULES>",
+    "^~/(.*)$",
+    "^[./]",
+    "^(.*)(sass|css|scss)$"
+  ],
+  "importOrderCaseInsensitive": true,
+  "importOrderSortSpecifiers": true,
   "importOrderParserPlugins": [
-    "typescript",
-    "jsx",
     "classProperties",
-    "decorators-legacy"
+    "decorators-legacy",
+    "jsx",
+    "typescript"
   ]
 }
