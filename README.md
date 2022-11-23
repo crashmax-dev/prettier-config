@@ -21,7 +21,7 @@ pnpm add @crashmax/prettier-config -D
 ### Overwrite some properties from the shared configuration
 
 ```js
-// .prettierrc.js
+// .prettierrc.cjs
 module.exports = {
   ...require('@crashmax/prettier-config'),
   semi: false
