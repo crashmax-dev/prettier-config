@@ -26,14 +26,13 @@
   },
   "homepage": "https://github.com/crashmax-dev/prettier-config#readme",
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "3.4.0",
-    "prettier": "2.7.1",
-    "prettier-plugin-multiline-arrays": "1.1.1"
+    "@ianvs/prettier-plugin-sort-imports": "3.7.1",
+    "prettier": "2.8.1",
+    "prettier-plugin-multiline-arrays": "1.1.2"
   },
   "peerDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "3.4.0",
-    "prettier": "2.7.1",
-    "prettier-plugin-multiline-arrays": "1.1.0"
+    "prettier": "2.8.1",
+    "prettier-plugin-multiline-arrays": "1.1.2"
   },
   "packageManager": "pnpm@7.7.0"
 }

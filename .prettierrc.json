@@ -21,7 +21,7 @@
     }
   ],
   "plugins": [
-    "@trivago/prettier-plugin-sort-imports",
+    "@ianvs/prettier-plugin-sort-imports",
     "prettier-plugin-multiline-arrays"
   ],
   "multilineArraysWrapThreshold": 2,
@@ -31,6 +31,7 @@
     "<THIRD_PARTY_MODULES>",
     "^~/(.*)$",
     "^[./]",
+    "<TYPES>",
     "^(.*)(sass|css|scss)$"
   ],
   "importOrderCaseInsensitive": true,
