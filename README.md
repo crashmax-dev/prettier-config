@@ -1,6 +1,6 @@
 # `@crashmax/prettier-config`
 
-> My personal [Prettier](https://prettier.io) configurations.
+> Here is my personal [Prettier](https://prettier.io) config.
 
 ## Install
 
