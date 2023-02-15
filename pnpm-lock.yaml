@@ -2,13 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ianvs/prettier-plugin-sort-imports': 3.7.1
-  prettier: 2.8.1
-  prettier-plugin-multiline-arrays: 1.1.2
+  prettier: 2.8.4
+  prettier-plugin-multiline-arrays: 1.1.3
 
 devDependencies:
-  '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.1
-  prettier: 2.8.1
-  prettier-plugin-multiline-arrays: 1.1.2
+  '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.4
+  prettier: 2.8.4
+  prettier-plugin-multiline-arrays: 1.1.3
 
 packages:
 
@@ -20,10 +20,10 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@augment-vir/common/6.1.6:
-    resolution: {integrity: sha512-jFK6EKycyfI3gnkLyZ4FxDzPbysUWDqT1IfHatCFbJI/wd4XmvQx/SdxpmBklchdeP0Q2+GIdtsqYIvWpcN1xw==}
+  /@augment-vir/common/8.1.0:
+    resolution: {integrity: sha512-mVE9upO/BIHdRIH/HoJAHDaHk57AxtQ3BvmI0B2o2xMvripDxuPf7jhxL793uyJtprLF2X6yE0BhG/rgLeHLbw==}
     dependencies:
-      type-fest: 3.4.0
+      type-fest: 3.5.7
     dev: true
 
   /@babel/code-frame/7.18.6:
@@ -219,7 +219,7 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@ianvs/prettier-plugin-sort-imports/3.7.1_prettier@2.8.1:
+  /@ianvs/prettier-plugin-sort-imports/3.7.1_prettier@2.8.4:
     resolution: {integrity: sha512-XDnBUUruJY9KgNd7T2ZHnVPWo5B9NzVDCLEMm7HjXTA3rTtMg5Q46gYRjLvampDXSmN8+icu54aRE3IIT8U+1w==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.0.0'
@@ -236,7 +236,7 @@ packages:
       javascript-natural-sort: 0.7.1
       lodash.clone: 4.5.0
       lodash.isequal: 4.5.0
-      prettier: 2.8.1
+      prettier: 2.8.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -405,14 +405,14 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /prettier-plugin-multiline-arrays/1.1.2:
-    resolution: {integrity: sha512-5gp7cMvwdUJB10dPU5DuYkWmqNluvtxft68Nc2D3+Q7+B2VB1eHx4UnfiILU/8heZCIH2RMvfHefg4N599LrLg==}
+  /prettier-plugin-multiline-arrays/1.1.3:
+    resolution: {integrity: sha512-8I4FWatPhZXAsPMKM5E6h92ZRLAniJDdl9Uyy5aBvz9jJxc27CYQJIKBXdRW1SHrgKjEeWchmsAkLVyORIEOqw==}
     dependencies:
-      '@augment-vir/common': 6.1.6
+      '@augment-vir/common': 8.1.0
     dev: true
 
-  /prettier/2.8.1:
-    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -434,8 +434,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /type-fest/3.4.0:
-    resolution: {integrity: sha512-PEPg6RHlB9cFwoTMNENNrQFL0cXX04voWr2UPwQBJ3pVs7Mt8Y1oLWdUeMdGEwZE8HFFlujq8gS9enmyiQ8pLg==}
+  /type-fest/3.5.7:
+    resolution: {integrity: sha512-6J4bYzb4sdkcLBty4XW7F18VPI66M4boXNE+CY40532oq2OJe6AVMB5NmjOp6skt/jw5mRjz/hLRpuglz0U+FA==}
     engines: {node: '>=14.16'}
     dev: true
 
