@@ -12,7 +12,7 @@
     ".prettierrc.json"
   ],
   "scripts": {
-    "postinstall": "node postinstall.js",
+    "postinstall": "node scripts/postinstall.js",
     "format": "prettier --write --ignore-unknown **"
   },
   "repository": {

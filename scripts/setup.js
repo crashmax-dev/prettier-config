@@ -1,5 +1,3 @@
-// @ts-check
-
 import { copyFile, readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
