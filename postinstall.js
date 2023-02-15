@@ -2,13 +2,9 @@ import { copyFile, readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 try {
-  const workDir = process.cwd()
-  const prettierConfigPath = join(
-    workDir,
-    'node_modules',
-    '@crashmax',
-    'prettier-config'
-  )
+  const workDir = process.env.INIT_CWD
+  const packageDir = process.cwd()
+
   const packageJsonPath = join(workDir, 'package.json')
   const packageJson = await readFile(packageJsonPath, 'utf-8')
   const parsedPackageJson = JSON.parse(packageJson)
@@ -19,8 +15,14 @@ try {
     JSON.stringify(parsedPackageJson, null, 2) + '\n',
     'utf-8'
   )
-  await copyFile(join(prettierConfigPath, '.pretterignore'), workDir)
-  await copyFile(join(prettierConfigPath, '.prettierrc.cjs'), workDir)
+  await copyFile(
+    join(packageDir, '.prettierignore'),
+    join(workDir, '.prettierignore')
+  )
+  await copyFile(
+    join(packageDir, '.prettierrc.cjs'),
+    join(workDir, '.prettierrc.cjs')
+  )
 
   console.log('@crashmax/prettier-config installed successfully!')
 } catch (err) {

@@ -2,13 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ianvs/prettier-plugin-sort-imports': 3.7.1
-  '@types/node': ^18.13.0
   prettier: 2.8.1
   prettier-plugin-multiline-arrays: 1.1.2
 
 devDependencies:
   '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.1
-  '@types/node': 18.13.0
   prettier: 2.8.1
   prettier-plugin-multiline-arrays: 1.1.2
 
@@ -279,10 +277,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
-    dev: true
-
-  /@types/node/18.13.0:
-    resolution: {integrity: sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==}
     dev: true
 
   /ansi-styles/3.2.1:

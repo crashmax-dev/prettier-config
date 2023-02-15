@@ -6,13 +6,13 @@
   "main": "./.prettierrc.json",
   "prettier": "./.prettierrc.json",
   "files": [
-    "scripts",
+    "postinstall.js",
     ".prettierrc.cjs",
     ".prettierignore",
     ".prettierrc.json"
   ],
   "scripts": {
-    "postinstall": "node scripts/postinstall.js",
+    "postinstall": "node postinstall.js",
     "format": "prettier --write --ignore-unknown **"
   },
   "repository": {
