@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs'
 import { copyFile, readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
@@ -15,14 +16,16 @@ try {
     JSON.stringify(parsedPackageJson, null, 2) + '\n',
     'utf-8'
   )
-  await copyFile(
-    join(packageDir, '.prettierignore'),
-    join(workDir, '.prettierignore')
-  )
-  await copyFile(
-    join(packageDir, '.prettierrc.cjs'),
-    join(workDir, '.prettierrc.cjs')
-  )
+
+  const prettierIgnorePath = join(workDir, '.prettierignore')
+  if (!existsSync(prettierIgnorePath)) {
+    await copyFile(join(packageDir, '.prettierignore'), prettierIgnorePath)
+  }
+
+  const prettierConfigPath = join(workDir, '.prettierrc.cjs')
+  if (!existsSync(prettierConfigPath)) {
+    await copyFile(join(packageDir, '.prettierrc.cjs'), prettierConfigPath)
+  }
 
   console.log('@crashmax/prettier-config installed successfully!')
 } catch (err) {
