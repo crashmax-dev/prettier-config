@@ -8,12 +8,11 @@
   "files": [
     "postinstall.js",
     ".prettierrc.cjs",
-    ".prettierignore",
     ".prettierrc.json"
   ],
   "scripts": {
     "postinstall": "node postinstall.js",
-    "format": "prettier --write --ignore-unknown **"
+    "format": "prettier --write **/*.{ts,tsx}"
   },
   "repository": {
     "type": "git",

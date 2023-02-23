@@ -9,7 +9,7 @@ try {
   const packageJsonPath = join(workDir, 'package.json')
   const packageJson = await readFile(packageJsonPath, 'utf-8')
   const parsedPackageJson = JSON.parse(packageJson)
-  parsedPackageJson.scripts.format = 'prettier --write --ignore-unknown **'
+  parsedPackageJson.scripts.format = 'prettier --write **/*.{ts,tsx}'
 
   await writeFile(
     packageJsonPath,
@@ -17,17 +17,15 @@ try {
     'utf-8'
   )
 
-  const prettierIgnorePath = join(workDir, '.prettierignore')
-  if (!existsSync(prettierIgnorePath)) {
-    await copyFile(join(packageDir, '.prettierignore'), prettierIgnorePath)
-  }
-
   const prettierConfigPath = join(workDir, '.prettierrc.cjs')
   if (!existsSync(prettierConfigPath)) {
     await copyFile(join(packageDir, '.prettierrc.cjs'), prettierConfigPath)
   }
 
-  console.log('@crashmax/prettier-config installed successfully!')
+  console.log(`
+    @crashmax/prettier-config installed successfully!
+    Add "format": "prettier --write **/*.{ts,tsx}" script to your package.json and run "npm run format" to format your code.
+  `)
 } catch (err) {
   console.log(err)
 }
