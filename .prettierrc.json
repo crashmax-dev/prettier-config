@@ -29,6 +29,7 @@
     "^node:(.*)$",
     "^(react|next(.*))$",
     "<THIRD_PARTY_MODULES>",
+    "^@/(.*)$",
     "^~/(.*)$",
     "^[./]",
     "<TYPES>",
