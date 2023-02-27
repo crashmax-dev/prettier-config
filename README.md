@@ -28,6 +28,14 @@ module.exports = {
 }
 ```
 
+```js
+// .prettierignore
+.next
+dist
+node_modules
+public
+```
+
 ### Copy the ignore file to your project folder
 
 If you want to extend the ignore file, run the following command in the root of your project folder:
@@ -49,7 +57,7 @@ Some commonly used scripts in `package.json`.
 ```json
 {
   "scripts": {
-    "format": "prettier --write **/**/*.{js,ts,tsx,json}",
+    "format": "prettier --write '**/*.{js,ts,tsx,json}'",
   }
 }
 ```
