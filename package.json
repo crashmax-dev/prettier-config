@@ -6,13 +6,11 @@
   "main": "./.prettierrc.json",
   "prettier": "./.prettierrc.json",
   "files": [
-    "postinstall.js",
     ".prettierrc.cjs",
     ".prettierrc.json"
   ],
   "scripts": {
-    "postinstall": "node postinstall.js",
-    "format": "prettier --write **/*.{ts,tsx}"
+    "format": "prettier --write '**/*.{js,ts,tsx,json}'"
   },
   "repository": {
     "type": "git",

@@ -18,22 +18,9 @@ pnpm add @crashmax/prettier-config -D
 
 ## Usage
 
-### Overwrite some properties from the shared configuration
-
 ```js
 // .prettierrc.cjs
-module.exports = {
-  ...require('@crashmax/prettier-config'),
-  semi: false
-}
-```
-
-```js
-// .prettierignore
-.next
-dist
-node_modules
-public
+module.exports = require('@crashmax/prettier-config')
 ```
 
 ### Copy the ignore file to your project folder
