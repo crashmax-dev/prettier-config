@@ -6,6 +6,7 @@
   "main": "./.prettierrc.json",
   "prettier": "./.prettierrc.json",
   "files": [
+    ".prettierignore",
     ".prettierrc.cjs",
     ".prettierrc.json"
   ],
