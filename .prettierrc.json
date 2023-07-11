@@ -12,31 +12,22 @@
   "trailingComma": "none",
   "quoteProps": "as-needed",
   "endOfLine": "lf",
-  "overrides": [
-    {
-      "files": ".*rc",
-      "options": {
-        "parser": "json"
-      }
-    }
-  ],
   "plugins": [
     "@ianvs/prettier-plugin-sort-imports",
     "prettier-plugin-multiline-arrays"
   ],
   "multilineArraysWrapThreshold": 2,
   "importOrder": [
-    "^node:(.*)$",
+    "<BUILTIN_MODULES>",
     "^(react|next(.*))$",
     "<THIRD_PARTY_MODULES>",
+    "<TYPES>",
     "^@/(.*)$",
     "^~/(.*)$",
     "^[./]",
-    "<TYPES>",
+    "<TYPES>^[.]",
     "^(.*)(sass|css|scss)$"
   ],
-  "importOrderCaseInsensitive": true,
-  "importOrderSortSpecifiers": true,
   "importOrderParserPlugins": [
     "classProperties",
     "decorators-legacy",
