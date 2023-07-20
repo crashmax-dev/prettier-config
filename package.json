@@ -29,12 +29,10 @@
   "homepage": "https://github.com/crashmax-dev/prettier-config#readme",
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
-    "prettier": "3.0.0",
-    "prettier-plugin-multiline-arrays": "2.0.0"
+    "prettier": "3.0.0"
   },
   "peerDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
-    "prettier": "3.0.0",
-    "prettier-plugin-multiline-arrays": "2.0.0"
+    "prettier": "3.0.0"
   }
 }
