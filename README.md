@@ -19,8 +19,13 @@ pnpm add @crashmax/prettier-config -D
 ## Usage
 
 ```js
-// .prettierrc.cjs
-module.exports = require('@crashmax/prettier-config')
+// .prettierrc.js
+import config from '@crashmax/prettier-config'
+
+/** @type {import('prettier').Options} */
+export default {
+  ...config
+}
 ```
 
 ### Copy the ignore file to your project folder
@@ -44,7 +49,7 @@ Some commonly used scripts in `package.json`.
 ```json
 {
   "scripts": {
-    "format": "prettier --write '**/*.{js,ts,tsx,json}'",
+    "format": "prettier --write '**/*.{js,ts,tsx,json}'"
   }
 }
 ```
