@@ -1,6 +1,6 @@
 {
   "name": "@crashmax/prettier-config",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "type": "module",
   "description": "prettier-config",
   "main": "./.prettierrc.json",
