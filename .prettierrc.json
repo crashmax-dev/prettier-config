@@ -13,10 +13,8 @@
   "quoteProps": "as-needed",
   "endOfLine": "lf",
   "plugins": [
-    "@ianvs/prettier-plugin-sort-imports",
-    "prettier-plugin-multiline-arrays"
+    "@ianvs/prettier-plugin-sort-imports"
   ],
-  "multilineArraysWrapThreshold": 2,
   "importOrder": [
     "<BUILTIN_MODULES>",
     "^(react|next(.*))$",

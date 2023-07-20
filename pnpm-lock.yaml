@@ -11,9 +11,6 @@ devDependencies:
   prettier:
     specifier: 3.0.0
     version: 3.0.0
-  prettier-plugin-multiline-arrays:
-    specifier: 2.0.0
-    version: 2.0.0
 
 packages:
 
@@ -23,18 +20,6 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
-    dev: true
-
-  /@augment-vir/common@13.5.0:
-    resolution: {integrity: sha512-kOnAOShZTaOJ8glYyi2K3hfiYV5zQyjpfc4jmHm5lySAFNMpOjKA7pZxpl8n3RCIHAt+nFP64vuxtSI6jSWOZw==}
-    dependencies:
-      type-fest: 3.13.0
-    dev: true
-
-  /@augment-vir/common@15.3.0:
-    resolution: {integrity: sha512-V9ksJcSw3Ikxw9QaoWbyKYYS/s9ysc6xwq7Xms7fui6oWaCt7+SMv9B1K5Qot+tuM0+LK0/vtD8Ms+/rCnlYqQ==}
-    dependencies:
-      type-fest: 3.13.0
     dev: true
 
   /@babel/code-frame@7.22.5:
@@ -411,23 +396,10 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /prettier-plugin-multiline-arrays@2.0.0:
-    resolution: {integrity: sha512-EFdtxNqEKSehtSZN2rHUtsA7dqV6fu1iJ4WU8fgR23Scfcf6mcVb3leOWmAkhhHEpwsNKPdSNN9pBX8Xx8AsCg==}
-    dependencies:
-      '@augment-vir/common': 15.3.0
-      proxy-vir: 0.0.1
-    dev: true
-
   /prettier@3.0.0:
     resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
-
-  /proxy-vir@0.0.1:
-    resolution: {integrity: sha512-K3sv2I9kigOqt17hMhvWjSiwx90hpxxD3rN+meVQhrGKoxhVbt82ulkm3i1KlenVIMS1KFskt/vltMlGHVQrMw==}
-    dependencies:
-      '@augment-vir/common': 13.5.0
     dev: true
 
   /semver@6.3.1:
@@ -453,11 +425,6 @@ packages:
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
-    dev: true
-
-  /type-fest@3.13.0:
-    resolution: {integrity: sha512-Gur3yQGM9qiLNs0KPP7LPgeRbio2QTt4xXouobMCarR0/wyW3F+F/+OWwshg3NG0Adon7uQfSZBpB46NfhoF1A==}
-    engines: {node: '>=14.16'}
     dev: true
 
   /update-browserslist-db@1.0.11(browserslist@4.21.9):
