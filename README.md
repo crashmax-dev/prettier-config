@@ -44,7 +44,7 @@ Some commonly used scripts in `package.json`.
 ```json
 {
   "scripts": {
-    "format": "prettier --write '**/*.{js,ts,tsx,json}'"
+    "format": "prettier --write \"**/*.{js,ts,tsx,json}\""
   }
 }
 ```
