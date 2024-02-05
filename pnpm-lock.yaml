@@ -7,13 +7,13 @@ settings:
 devDependencies:
   '@ianvs/prettier-plugin-sort-imports':
     specifier: 4.1.1
-    version: 4.1.1(prettier@3.0.3)
+    version: 4.1.1(prettier@3.2.5)
   prettier:
-    specifier: 3.0.3
-    version: 3.0.3
+    specifier: 3.2.5
+    version: 3.2.5
   prettier-plugin-multiline-arrays:
-    specifier: 3.0.0
-    version: 3.0.0(prettier@3.0.3)
+    specifier: 3.0.3
+    version: 3.0.3(prettier@3.2.5)
 
 packages:
 
@@ -25,17 +25,12 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
 
-  /@augment-vir/common@13.5.0:
-    resolution: {integrity: sha512-kOnAOShZTaOJ8glYyi2K3hfiYV5zQyjpfc4jmHm5lySAFNMpOjKA7pZxpl8n3RCIHAt+nFP64vuxtSI6jSWOZw==}
-    dependencies:
-      type-fest: 3.13.1
-    dev: true
-
-  /@augment-vir/common@21.5.0:
-    resolution: {integrity: sha512-IIhYTXCVe7prxo+0cidZ+/eFUMvGPljCG0WWVc3zR7DYww9UwEhR6X3Lr1z6AlInw6msyI24PJH/6vIM9EvagA==}
+  /@augment-vir/common@22.4.0:
+    resolution: {integrity: sha512-7E0Qng7YN0nhqxtqzePTB6Mms5fR05OTexjlKOgjbNi+SWDCRt2zFGWfMhirEoDONa3BRpgXsQjqz/sEzIwHMg==}
     dependencies:
       browser-or-node: 2.1.1
-      type-fest: 4.6.0
+      run-time-assertions: 0.3.0
+      type-fest: 4.10.2
     dev: true
 
   /@babel/code-frame@7.22.13:
@@ -229,7 +224,7 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@ianvs/prettier-plugin-sort-imports@4.1.1(prettier@3.0.3):
+  /@ianvs/prettier-plugin-sort-imports@4.1.1(prettier@3.2.5):
     resolution: {integrity: sha512-kJhXq63ngpTQ2dxgf5GasbPJWsJA3LgoOdd7WGhpUSzLgLgI4IsIzYkbJf9kmpOHe7Vdm/o3PcRA3jmizXUuAQ==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.0.0'
@@ -243,7 +238,7 @@ packages:
       '@babel/parser': 7.23.0
       '@babel/traverse': 7.23.2
       '@babel/types': 7.23.0
-      prettier: 3.0.3
+      prettier: 3.2.5
       semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
@@ -354,6 +349,10 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: true
 
+  /expect-type@0.15.0:
+    resolution: {integrity: sha512-yWnriYB4e8G54M5/fAFj7rCIBiKs1HAACaY13kCz6Ku0dezjS9aMcfcdVK2X8Tv2tEV1BPz/wKfQ7WA4S/d8aA==}
+    dev: true
+
   /gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
@@ -410,26 +409,34 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /prettier-plugin-multiline-arrays@3.0.0(prettier@3.0.3):
-    resolution: {integrity: sha512-qEfctOpCfnTztyLRoVkKvYpOLeTiG1Sq29Guk9zMs5YeZeoRZXO6JDdWj9OJyswJHmIrOEuPCmpdS7yxkyIatw==}
+  /prettier-plugin-multiline-arrays@3.0.3(prettier@3.2.5):
+    resolution: {integrity: sha512-5/ccfqC9ibADfkv91Roe5EZJBbtlLXuG7bldlWJcuGDfYln44fybHb636/71HfcKUREP2fml+7S4wLrm4Pr1ow==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
-      '@augment-vir/common': 21.5.0
-      prettier: 3.0.3
-      proxy-vir: 0.0.1
+      '@augment-vir/common': 22.4.0
+      prettier: 3.2.5
+      proxy-vir: 0.0.2
     dev: true
 
-  /prettier@3.0.3:
-    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
 
-  /proxy-vir@0.0.1:
-    resolution: {integrity: sha512-K3sv2I9kigOqt17hMhvWjSiwx90hpxxD3rN+meVQhrGKoxhVbt82ulkm3i1KlenVIMS1KFskt/vltMlGHVQrMw==}
+  /proxy-vir@0.0.2:
+    resolution: {integrity: sha512-4yP9ol7cFb1lUwYyj0B1+M+EpQz7tAu7PTgHCqOQenn0abXOJ3epfS3d2e+9zTgpBfYFzutL5tD2hyFz/smXyw==}
     dependencies:
-      '@augment-vir/common': 13.5.0
+      '@augment-vir/common': 22.4.0
+    dev: true
+
+  /run-time-assertions@0.3.0:
+    resolution: {integrity: sha512-XDSPemT0ppqLnlar4Nea7SoZdfImygVh5HtIwHdq3mefWtTZAXwKdtckAoVsgQQhrdxf2T8c4b8DktBvEWOqng==}
+    dependencies:
+      '@augment-vir/common': 22.4.0
+      expect-type: 0.15.0
+      type-fest: 4.10.2
     dev: true
 
   /semver@6.3.1:
@@ -457,13 +464,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /type-fest@3.13.1:
-    resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
-    engines: {node: '>=14.16'}
-    dev: true
-
-  /type-fest@4.6.0:
-    resolution: {integrity: sha512-rLjWJzQFOq4xw7MgJrCZ6T1jIOvvYElXT12r+y0CC6u67hegDHaxcPqb2fZHOGlqxugGQPNB1EnTezjBetkwkw==}
+  /type-fest@4.10.2:
+    resolution: {integrity: sha512-anpAG63wSpdEbLwOqH8L84urkL6PiVIov3EMmgIhhThevh9aiMQov+6Btx0wldNcvm4wV+e2/Rt1QdDwKHFbHw==}
     engines: {node: '>=16'}
     dev: true
 
